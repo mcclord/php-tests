@@ -23,7 +23,7 @@ $args = collect($_REQUEST);
 $format = $args->pull('format') ?: 'html';
 $type = $args->pull('type');
 if (!$type) {
-    exit('Please specify a type');
+    exit('Please specify a type of nba');
 }
 
 $controller = new Controller($args);
