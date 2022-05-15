@@ -40,7 +40,7 @@ function e() {
     if (!$noexit) {
         $bt = debug_backtrace();
         exit('<i>Called from: ' . $bt[0]['file'] . ' (' . ($bt[1]['class'] ? $bt[1]['class'] . ':' : '') . $bt[1]['function'] . ')</i>');
-    }
+    } 
 }
 
 /**
@@ -49,6 +49,7 @@ function e() {
  */
 function fail($message) {
     exit('<div style="display: inline-block; color: #a94442; background: #f2dede; border: solid 1px #ebccd1; font-family: Helvetica, Arial; size: 16px; padding: 15px;">Test failed: ' . $message . '</div>');
+    // this is new comment
 }
 
 /**
